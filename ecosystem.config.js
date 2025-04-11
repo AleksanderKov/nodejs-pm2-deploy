@@ -28,7 +28,7 @@ module.exports = {
       repo: 'git@github.com:AleksanderKov/web-plus-pm2-deploy.git',
       path: '/home/ubuntu/mesto',
       'pre-deploy-local': '',
-      'post-deploy': `cd backend && npm install && npm run build && cd ../frontend && npm install && npm run build && pm2 reload ecosystem.config.js --env production`,
+      'post-deploy': `cd backend && npm install && npm run build && cd ../frontend && npm install && npm run build && pm2 reload ../../ecosystem.config.js --env production`,
       'pre-setup': ''
     }
   }
